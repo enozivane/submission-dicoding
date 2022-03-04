@@ -1,0 +1,279 @@
+@import url('http://fonts.cdnfonts.com/css/valorant');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans',
+    sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 10px;
+  overflow: auto;
+}
+
+
+
+/* navbar */
+nav {
+  display: flex;
+  background-color: rgb(16, 10, 44);
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: rgb(218, 76, 76);
+}
+
+nav .logo {
+  font-family: 'VALORANT',
+    sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+
+
+
+
+/* hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  top: -3px;
+  left: -6px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: flex;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.6s;
+}
+
+
+/* hamburger animation */
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+  background-color: rgb(218, 76, 76);
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+  background-color: rgb(218, 76, 76);
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+
+/* content */
+
+#content {
+  float: left;
+  width: 73%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  padding: 16px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* map */
+.map-image {
+  width: 80%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#map section p {
+  width: 80%;
+}
+
+/* weapon */
+.weapon-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* aside */
+.profile section {
+  text-align: center;
+  border-style: inset;
+  padding: 30px
+}
+
+aside section {
+  margin-bottom: 30px;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+
+}
+
+.pp {
+  border-style: inset;
+  padding: 30px;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+table tr th td a {
+  font-family: 'Open Sans',
+    sans-serif;
+  font-size: 16px;
+
+}
+
+
+table th {
+  text-align: left;
+}
+
+table td {
+  text-align: right
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 40px;
+  color: white;
+  background-color: rgb(16, 10, 44);
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  bottom: 0px;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+}
+
+
+/* Responsive Breakpoint*/
+
+/* Ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Ukuran mobile */
+
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 70%;
+    height: 30vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(33, 26, 65);
+    z-index: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

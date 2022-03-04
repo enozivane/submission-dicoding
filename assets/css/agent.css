@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  margin-top: 50px;
+}
+
+.container .box {
+  width: 300px;
+  height: 400px;
+  line-height: 1.5;
+  color: #fff;
+  display: flex;
+  border-radius: 8px;
+  margin: 60px;
+}
+
+.box {
+  background-color: white;
+  background-image: url('../img/agent/Jettt.png');
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  border-radius: 8px;
+}
+
+.box h1 {
+  font-size: 25px;
+}
+
+.box p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  text-align: left;
+  border-radius: 8px;
+  transition: all .5s;
+}
+
+.text:hover {
+  opacity: 1;
+}
+
+.flex-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* image */
+.d-two {
+  background-image: url('../img/agent/Reyna_artwork.png');
+}
+
+.d-three {
+  background-image: url('../img/agent/Phoenix.png');
+}
+
+.d-four {
+  background-image: url('../img/agent/Raze_artwork.png');
+}
+
+.d-five {
+  background-image: url('../img/agent/Yoru_artwork.png');
+}
+
+.d-six {
+  background-image: url('../img/agent/Neon_KeyArt-Web.png');
+}
+
+/*  */
+.c-one {
+  background-image: url('../img/agent/Brimstone_artwork.png');
+}
+
+.c-two {
+  background-image: url('../img/agent/Viper_artwork.png');
+}
+
+.c-three {
+  background-image: url('../img/agent/Omen_artwork.png');
+}
+
+.c-four {
+  background-image: url('../img/agent/Astra_artwork.png');
+}
+
+/*  */
+.i-one {
+  background-image: url('../img/agent/Sova_artwork.png');
+}
+
+.i-two {
+  background-image: url('../img/agent/Breach_artwork.png');
+}
+
+.i-three {
+  background-image: url('../img/agent/Skye_artwork.png');
+}
+
+.i-four {
+  background-image: url('../img/agent/KAYO_KeyArt_587x900.png');
+}
+
+/*  */
+.s-one {
+  background-image: url('../img/agent/Sage_artwork.png');
+}
+
+.s-two {
+  background-image: url('../img/agent/Cypher_artwork.png');
+}
+
+.s-three {
+  background-image: url('../img/agent/Killjoy.png');
+}
+
+.s-four {
+  background-image: url('../img/agent/Chamber_artwork.png');
+}
+
+/* ------------------------------ */
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 16px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 80px 20px;
+  height: 100%;
+}
+
+#duelist {
+  background-color: rgb(49, 48, 54);
+}
+
+#controller {
+  background-color: rgb(49, 48, 54);
+}
+
+#initiator {
+  background-color: rgb(49, 48, 54);
+}
+
+#sentinel {
+  background-color: rgb(49, 48, 54);
+}
